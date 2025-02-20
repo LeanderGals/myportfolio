@@ -1,0 +1,63 @@
+.homeContainer{
+    background-image: url("../images/bg1.jpg"); /* Update with your actual image path */
+    background-size: cover;  /* Ensures the image covers the entire section */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    height: 100vh; 
+    width: 100vw; /* Makes sure it takes the full viewport height */
+    display: flex;  /* Keeps your content centered if needed */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 150px;
+    overflow: hidden;
+}
+.homePicnText{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    
+}
+.nametext{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 600px;
+}
+.nametext p{
+    font-size: 1.2rem;
+}
+.nametext h1{
+    font-size: 3rem;
+}
+.socmed{
+    display: flex;
+    gap: 10px;
+}
+.sm{
+    width: 50px;
+    height: 50px;    
+}
+.cvandsm{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 10px;
+}
+.hometext{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.mypic{
+    display: flex;
+    margin-right: 50px;
+    width: 50%;
+}
+.downloadbtn button{
+    background-color: #6868E4;
+}

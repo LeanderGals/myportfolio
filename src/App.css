@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
-  padding: 2rem;
+  justify-content: center;
+  padding: 0;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* Footer Styles */
+footer {
+  display: flex;
+  background-color: #201E43;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+  
+}
+
+/* Buttons */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Utility Classes */
+.text-center {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mt-20 {
+  margin-top: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.homestyle{
+    margin: 2% auto;
+    padding: 0% 2% 2% 2%;
+    width: 90%;
+    
+}
+
+.selectedimg1{
+   display: flex;
+   justify-content: center;
+   margin-top: 3%;
+}
+
+.selectedimg2 {
+   width: 80%;
+   max-width: 1200px; 
+   position: relative; 
+   overflow: hidden;
+}
+
+.selectedimg3 {
+  width: 100%;
+  height: auto; 
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  body{
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .homestyle {
+    width: 100%; 
+    padding: 0 2%; 
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  footer{
+    width: 100%;
   }
-}
 
-.card {
-  padding: 2em;
+ /* Adjust button styles on mobile */
+ button {
+  flex: 1 1 calc(33.33% - 10px); 
+  max-width: 100px; 
+  font-size: 14px; 
 }
-
-.read-the-docs {
-  color: #888;
 }
