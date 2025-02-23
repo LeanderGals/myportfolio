@@ -1,24 +1,14 @@
-.aboutContainer{
+.containerContact{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: url("../images/bg4.jpg"); /* Update with your actual image path */
     background-size: cover;  /* Ensures the image covers the entire section */
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;  /* Prevents tiling */
-    height: 70vh; 
+    height: 100vh; 
+    width: 100vw;
     color: white;
-    width: 100vw; /* Makes sure it takes the full viewport height */
-}
-.aboutMeText{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 20px;
-}
-.aboutMeText h1{
-    font-size: 2rem;
-}
-.aboutMeText p{
-    font-size: 1.2rem;
+    overflow: hidden;
 }

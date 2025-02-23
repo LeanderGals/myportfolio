@@ -1,0 +1,77 @@
+#skills {
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bg1.jpg"); /* Update with your actual image path */
+    background-size: cover;  /* Ensures the image covers the entire section */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    height: 100vh; 
+    width: 100vw;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .containerSkills {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #1E1E1E;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .skillsList {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .category {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .skill-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-buttons button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .skill-buttons button:hover {
+    background: darkblue;
+  }
+  
+  .skillsImg {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  .skillsImg img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+ 
+  

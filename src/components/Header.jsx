@@ -8,7 +8,7 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navRef = useRef(null); 
   const navigate = useNavigate();
-
+  
   const toggleNav = () => setIsNavOpen(!isNavOpen);
 
   const scrollToSection = (id) => {

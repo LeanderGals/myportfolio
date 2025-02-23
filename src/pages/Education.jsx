@@ -25,12 +25,14 @@ const Education = () => {
 
   return (
     <section id='education'>
-    <div className="container">
-        <h2>Educational Background</h2>
+    <div className="containerEduc">
+      <div className="educText">
+        <h1>Educational Background</h1>
         <p>
             My educational backgrond shows my unwavering commitment to lifelong learning and personal development. 
             It attest to my unwavering pursuit to information and skill development in order to achieve in my choosen field.
         </p>
+        </div>
         <div className="timeline">
             {educationData.map((item, index) => (
             <div className="timeline-item" key={index}>
@@ -38,7 +40,7 @@ const Education = () => {
             <p><strong>{item.degree}</strong></p>
             <p>{item.year}</p>     
             <p>{item.address}</p>
-            </div>
+          </div>
         ))}
         </div>
 
