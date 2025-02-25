@@ -7,11 +7,13 @@ import '../css/Header.css';
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navRef = useRef(null); 
+  const [activeSection, setActiveSection] = useState('home');
   const navigate = useNavigate();
   
   const toggleNav = () => setIsNavOpen(!isNavOpen);
 
   const scrollToSection = (id) => {
+    setActiveSection(id);
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
@@ -54,12 +56,12 @@ const Header = () => {
 
           
           <nav ref={navRef} className={`header-nav ${isNavOpen ? 'open' : ''}`}>
-            <div className="headernav1">
-              <a href="#home" onClick={() => scrollToSection('home')}>Home</a>
-              <a href="#about" onClick={() => scrollToSection('about')}>About</a>
-              <a href="#education" onClick={() => scrollToSection('education')}>Education</a>
-              <a href="#skills" onClick={() => scrollToSection('skills')}>Skills</a>
-              <a href="#projects" onClick={() => scrollToSection('projects')}>Projects</a>
+          <div className="headernav1">
+              <a href="#home" onClick={() => scrollToSection('home')} className={activeSection === 'home' ? 'active' : ''}>Home</a>
+              <a href="#about" onClick={() => scrollToSection('about')} className={activeSection === 'about' ? 'active' : ''}>About</a>
+              <a href="#education" onClick={() => scrollToSection('education')} className={activeSection === 'education' ? 'active' : ''}>Education</a>
+              <a href="#skills" onClick={() => scrollToSection('skills')} className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
+              <a href="#projects" onClick={() => scrollToSection('projects')} className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
             </div>
             <div className="contactbtn">
               <button onClick={() => scrollToSection('contact')}>Contact Me</button>          

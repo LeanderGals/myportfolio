@@ -1,9 +1,14 @@
+#home {
+    transform-origin: top;
+  }
+  
 .homeContainer{
     background-image: url("../images/bg1.jpg"); /* Update with your actual image path */
     background-size: cover;  /* Ensures the image covers the entire section */
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;  /* Prevents tiling */
     height: 100vh; 
+    min-height: 100vh;
     width: 100vw; /* Makes sure it takes the full viewport height */
     display: flex;  /* Keeps your content centered if needed */
     align-items: center;
@@ -58,6 +63,14 @@
     margin-right: 50px;
     width: 50%;
 }
-.downloadbtn button{
+.downloadbtn button {
+    transition: all 0.3s ease-in-out;
     background-color: #6868E4;
-}
+  }
+  
+  .downloadbtn button:hover {
+    transform: scale(1.1);
+    background-color: #7b7bff; /* Highlight effect */
+  }
+
+  

@@ -31,9 +31,27 @@
     gap: 150px;
     transition: transform 0.3s ease-in-out;
   }
-  .headernav1{
-    display: flex;
-    gap: 40px;
+  .headernav1 a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s;
+  }
+  
+  .headernav1 a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .headernav1 a:hover {
+    color: #f39c12; /* Change color on hover */
   }
  
   .header-nav a {
@@ -63,7 +81,7 @@
  }
 
  .contactbtn button:hover{
-  background: #3131d4;
+    background: #7b7bff;
     transform: scale(1.05);
  }
   
