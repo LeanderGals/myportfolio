@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ContactIcon from '../images/contact.png'
+import '../css/Contact.css'
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -32,7 +34,12 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h1>Contact Me</h1>
+       <h1>Contact Me</h1>
+      <div className="containerContact">
+        <div className="contactIcon">
+          <img src={ContactIcon} alt="Contact" />
+        </div>
+        <div className="contactInfo">
       <form onSubmit={handleSubmit}>
         <input type="text" name="name" placeholder="Your Name" value={form.name} onChange={handleChange} required />
         <input type="email" name="email" placeholder="Your Email" value={form.email} onChange={handleChange} required />
@@ -40,6 +47,8 @@ const Contact = () => {
         <button type="submit">Send Message</button>
       </form>
       <p>{status}</p>
+      </div>
+      </div>
     </section>
   );
 };

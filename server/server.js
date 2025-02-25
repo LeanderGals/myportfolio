@@ -7,7 +7,11 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors()); // Allow requests from frontend
+app.use(cors({
+    origin: 'https://leandergals.netlify.app', // Replace with your Netlify URL
+    methods: 'POST',
+    allowedHeaders: ['Content-Type']
+}));
 
 // Email sending function
 app.post('/send-email', async (req, res) => {
@@ -15,10 +19,12 @@ app.post('/send-email', async (req, res) => {
 
     // Nodemailer transporter
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
         auth: {
-            user: process.env.EMAIL_USER, // Your email
-            pass: process.env.EMAIL_PASS  // Your email app password
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         }
     });
 
@@ -37,6 +43,10 @@ app.post('/send-email', async (req, res) => {
         res.status(500).send({ success: false, message: 'Failed to send email', error });
     }
 });
+app.get('/', (req, res) => {
+    res.send('Backend is running successfully!');
+});
+
 
 // Start the server
 const PORT = process.env.PORT || 5000;
