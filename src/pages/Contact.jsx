@@ -40,13 +40,13 @@ const Contact = () => {
           <img src={ContactIcon} alt="Contact" />
         </div>
         <div className="contactInfo">
-      <form onSubmit={handleSubmit}>
-        <input type="text" name="name" placeholder="Your Name" value={form.name} onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Your Email" value={form.email} onChange={handleChange} required />
-        <textarea name="message" placeholder="Your Message" value={form.message} onChange={handleChange} required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p>{status}</p>
+          <form onSubmit={handleSubmit}>
+            <input type="text" name="name" placeholder="Your Name" value={form.name} onChange={handleChange} required />
+            <input type="email" name="email" placeholder="Your Email" value={form.email} onChange={handleChange} required />
+            <textarea name="message" placeholder="Your Message" value={form.message} onChange={handleChange} required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+          <p>{status}</p>
       </div>
       </div>
     </section>

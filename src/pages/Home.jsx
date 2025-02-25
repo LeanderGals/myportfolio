@@ -25,7 +25,9 @@ const Home = () => {
                 <img className="sm"src={X} alt="" />
               </div>
               <div className="downloadbtn">
-                <button>Download CV</button>
+                <a href="/LG_resume_2025.pdf" download>
+                  <button>Download CV</button>
+                </a>
               </div>
             </div>
           </div>

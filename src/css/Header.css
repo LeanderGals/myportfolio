@@ -62,6 +62,10 @@
   background-color: #6868E4;
  }
 
+ .contactbtn button:hover{
+  background: #3131d4;
+    transform: scale(1.05);
+ }
   
   /* Mobile menu button (hamburger) */
   .navbar-toggle {
