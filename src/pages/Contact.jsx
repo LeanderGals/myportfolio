@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch('https://your-backend.onrender.com/send-email', { // Change this to your Render URL
+      const response = await fetch('https://myportfolio-3-4me1.onrender.com/send-email', { // Change this to your Render URL
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)
