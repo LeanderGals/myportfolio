@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from '../images/logo1.png'; 
+import Logo from '../images/logo.png'; 
 import '../css/Header.css';
 
 
@@ -41,7 +41,7 @@ const Header = () => {
       <div className="headerContainer">
         <div className="namesite">
         <a href="#home" onClick={() => scrollToSection('home')}>
-            <img src={Logo} alt="USTP Navigator Logo" className="site-logo" />
+            <img src={Logo} alt="USTP Navigator Logo" className="site-logo"/>
         </a>
         </div>
 

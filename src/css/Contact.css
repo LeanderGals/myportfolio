@@ -1,4 +1,4 @@
-.containerContact{
+#contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,3 +12,18 @@
     color: white;
     overflow: hidden;
 }
+.containerContact{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #6868E4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

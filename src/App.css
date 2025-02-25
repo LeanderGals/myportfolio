@@ -38,7 +38,13 @@ footer {
   justify-content: center;
   position: absolute;
   bottom: 0;
+  height: 80px;
+  gap: 10px;
   width: 100%;
+}
+footer img{
+  height: 50px;
+  width: 50px;
 }
 
 footer p {
