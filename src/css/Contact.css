@@ -1,29 +1,133 @@
-#contact{
+#contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/bg4.jpg"); /* Update with your actual image path */
-    background-size: cover;  /* Ensures the image covers the entire section */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;  /* Prevents tiling */
+    background-image: url("../images/bg1.jpg"); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh; 
     width: 100vw;
     color: white;
+    text-align: center;
     overflow: hidden;
+    position: relative;
 }
-.containerContact{
+
+/* Semi-transparent background for better readability */
+.containerContact {
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: center;
+    gap: 60px;
+    width: 50%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Blurry effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
+
+/* Contact icon */
+.contactIcon img {
+    width: 300px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* Contact form */
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+}
+
+/* Form input fields */
+.contactInfo form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactInfo input {
+    width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.contactInfo textarea{
+    width: 400px;
+    height: 180px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input placeholder color */
+.contactInfo input::placeholder, 
+.contactInfo textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input focus effect */
+.contactInfo input:focus, 
+.contactInfo textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Send button */
+.contactInfo button {
+    width: 150px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
     background: #6868E4;
     color: white;
-    border: none;
+    font-size: 16px;
     cursor: pointer;
-  }
-  
+    transition: all 0.3s ease-in-out;
+}
+
+.contactInfo button:hover {
+    background: #3131d4;
+    transform: scale(1.05);
+}
+
+/* Status message */
+.contactInfo p {
+    font-size: 16px;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .containerContact {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .contactIcon img {
+        width: 120px;
+    }
+
+    .contactInfo input,
+    .contactInfo textarea {
+        width: 250px;
+    }
+}
