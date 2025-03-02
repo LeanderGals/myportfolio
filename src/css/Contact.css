@@ -7,8 +7,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 120vh; 
-    width: 100vw;
+    min-height: 120vh; 
+    min-width: 100vw;
     color: white;
     text-align: center;
     overflow: hidden;
@@ -139,7 +139,6 @@
     .containerContact {
         flex-direction: column;
         gap: 30px;
-        padding: 20px;
     }
 
     .contactIcon img {
