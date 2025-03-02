@@ -1,50 +1,57 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../images/logo.png'; 
 import '../css/Header.css';
-
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navRef = useRef(null); 
   const [activeSection, setActiveSection] = useState('home');
-  const navigate = useNavigate();
-  
+
   const toggleNav = () => setIsNavOpen(!isNavOpen);
 
   const scrollToSection = (id) => {
-    setActiveSection(id);
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(id); // Set active manually when clicked
     }
-    setIsNavOpen(false); // Close menu after clicking
+    setIsNavOpen(false);
   };
-  // Close the nav if a click happens outside the nav area
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (isNavOpen && navRef.current && !navRef.current.contains(event.target)) {
-        setIsNavOpen(false); 
-      }
-    };
 
-    document.addEventListener('mousedown', handleOutsideClick);
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.6 } // Change active section when 60% of it is visible
+    );
+
+    sections.forEach((section) => observer.observe(section));
 
     return () => {
-      document.removeEventListener('mousedown', handleOutsideClick);
+      sections.forEach((section) => observer.unobserve(section));
     };
-  }, [isNavOpen]);
-
-  // Close nav when a link is clicked
-  const closeNavOnLinkClick = () => setIsNavOpen(false);
+  }, []);
 
   return (
     <header className="header">
       <div className="headerContainer">
         <div className="namesite">
-        <a href="#home" onClick={() => scrollToSection('home')}>
-            <img src={Logo} alt="USTP Navigator Logo" className="site-logo"/>
-        </a>
+          <a className='logoname' href="#home" onClick={() => scrollToSection('home')}>
+            <div>
+              <img src={Logo} alt="" className="site-logo"/>
+            </div>
+            <div>
+              <p>Leander</p>
+              <p>Galasanay</p>
+            </div>
+          </a>
         </div>
 
         <div className="navigation1">
@@ -54,9 +61,8 @@ const Header = () => {
             <span className="navbar-icon"></span>
           </button>
 
-          
           <nav ref={navRef} className={`header-nav ${isNavOpen ? 'open' : ''}`}>
-          <div className="headernav1">
+            <div className="headernav1">
               <a href="#home" onClick={() => scrollToSection('home')} className={activeSection === 'home' ? 'active' : ''}>Home</a>
               <a href="#about" onClick={() => scrollToSection('about')} className={activeSection === 'about' ? 'active' : ''}>About</a>
               <a href="#education" onClick={() => scrollToSection('education')} className={activeSection === 'education' ? 'active' : ''}>Education</a>
@@ -67,9 +73,7 @@ const Header = () => {
               <button onClick={() => scrollToSection('contact')}>Contact Me</button>          
             </div>
           </nav>
-          
         </div>
-        
       </div>
     </header>
   );

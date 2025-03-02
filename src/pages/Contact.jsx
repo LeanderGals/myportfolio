@@ -52,13 +52,8 @@ const Contact = () => {
   }, []);
 
   return (
-    <motion.section 
-      id="contact"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false, amount: 0.3 }}
-    >
+    <section 
+      id="contact">
       <motion.h1 
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -146,11 +141,13 @@ const Contact = () => {
         </motion.div>
       </div>
 
-      {/* Scroll-to-Top Button */}
-      <button className="scrollToTop" onClick={scrollToTop}>
+      {showScrollButton && (
+        <button className="scrollToTop" onClick={scrollToTop}>
           &#8679;
         </button>
-    </motion.section>
+      )}
+
+    </section>
   );
 };
 

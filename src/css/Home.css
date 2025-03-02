@@ -21,48 +21,50 @@
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.hometext{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 1rem 2rem 1rem 5rem;
+}
+.mypic{
+    display: flex;
+}
+.mypic img{
+    max-width: 800px;
+    height: auto;
     
 }
 .nametext{
     display: flex;
     flex-direction: column;
     color: white;
-    width: 600px;
 }
 .nametext p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .nametext h1{
-    font-size: 3rem;
+    font-size: 2.3rem;
 }
 .socmed{
     display: flex;
     gap: 10px;
 }
 .sm{
-    width: 50px;
-    height: 50px;    
+    width: 2.5rem;
+    height: auto;    
 }
 .cvandsm{
     display: flex;
     flex-direction: column;
-    width: 600px;
     gap: 10px;
 }
-.hometext{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: flex-end;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-.mypic{
-    display: flex;
-    margin-right: 50px;
-    width: 50%;
-}
+
+
 .downloadbtn button {
     transition: all 0.3s ease-in-out;
     background-color: #6868E4;
@@ -73,4 +75,77 @@
     background-color: #7b7bff; /* Highlight effect */
   }
 
-  
+  @media (max-width: 768px) {
+    .homeContainer {
+        padding-top: 100px;
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .homePicnText {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nametext {
+        width: 90%;
+    }
+
+    .nametext h1 {
+        font-size: 2rem;
+    }
+
+    .nametext p {
+        font-size: .8rem;
+    }
+
+    .cvandsm {
+        width: 90%;
+    }
+
+    .mypic {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .hometext {
+        width: 100%;
+        align-items: center;
+    }
+
+    .sm {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* 📲 Tablets (Max Width: 1024px) */
+@media (max-width: 1024px) {
+    .homeContainer {
+        padding-top: 120px;
+    }
+
+    .nametext {
+        width: 80%;
+    }
+
+    .cvandsm {
+        width: 80%;
+    }
+
+    .mypic {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .hometext {
+        width: 80%;
+    }
+
+    .sm {
+        width: 45px;
+        height: 45px;
+    }
+}

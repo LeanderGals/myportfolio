@@ -3,12 +3,100 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/bg5.jpg"); /* Update with your actual image path */
-    background-size: cover;  /* Ensures the image covers the entire section */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;  /* Prevents tiling */
+    background: linear-gradient(#6868E4, #1e1e1e);
     height: 100vh; 
     width: 100vw;
     color: white;
     overflow: hidden;
 }
+
+.containerProj h1 {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.containerProj h1::after {
+    content: "";
+    display: block;
+    width: 75px; /* Adjust width */
+    height: 4px; /* Thickness of the underline */
+    background-color: white; /* Your theme color */
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: width 0.4s ease-in-out;
+}
+
+.containerProj h1:hover::after {
+    width: 200px; /* Expand underline on hover */
+}
+
+
+  
+  .projectsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .projectCard {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .projectCard:hover {
+    transform: scale(1.05);
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .projectCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .techBadge {
+    background: #6868E4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  
+
+  .projectSwiper {
+    width: 100%;
+    height: 200px; /* Adjust the height */
+  }
+  
+  .projectSwiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

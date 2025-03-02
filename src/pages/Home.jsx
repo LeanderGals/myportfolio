@@ -8,46 +8,46 @@ import X from '../images/x.png';
 
 const Home = () => {
   return (
-    <motion.section 
-      id="home"
-      initial={{ opacity: 0, scale: 0.95 }} 
-      animate={{ opacity: 1, scale: 1 }} 
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
+    <section id="home">
       <div className="homeContainer">
         <motion.div 
           className="homePicnText"
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <motion.div 
             className="hometext"
             initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+            viewport={{ once: false, amount: 0.3 }}
           >
             <div className="nametext">
               <motion.p
                 initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+                viewport={{ once: false, amount: 0.3 }}
               >
                 Hi there,
               </motion.p>
 
               <motion.h1
                 initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
+                viewport={{ once: false, amount: 0.3 }}
               >
                 I'm Leander Galasanay
               </motion.h1>
 
               <motion.p
                 initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+                viewport={{ once: false, amount: 0.3 }}
               >
                 A Front-End Developer based in the Philippines
               </motion.p>
@@ -56,7 +56,7 @@ const Home = () => {
             <div className="cvandsm">
               <div className="socmed">
                 <motion.a 
-                  href="https://www.facebook.com/your-profile" 
+                  href="https://www.facebook.com/leander.galasanay" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -89,8 +89,9 @@ const Home = () => {
               <motion.div 
                 className="downloadbtn"
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
+                viewport={{ once: false, amount: 0.3 }}
               >
                 <a href="/LG_resume_2025.pdf" download>
                   <motion.button 
@@ -107,14 +108,15 @@ const Home = () => {
           <motion.div 
             className="mypic"
             initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+            viewport={{ once: false, amount: 0.3 }}
           >
             <img src={Mypic} alt="Leander Galasanay" />
           </motion.div>
         </motion.div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

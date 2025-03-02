@@ -5,8 +5,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#6868E4, #1e1e1e);
-    height: 100vh; 
+    background-image: url("../images/bg5.jpg"); /* Update with your actual image path */
+    background-size: cover;  /* Ensures the image covers the entire section */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat;    height: 100vh; 
     width: 100vw;
     color: white;
     overflow: hidden;
@@ -80,5 +82,27 @@
     max-height: 80%;
   }
   
+  #skills h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#skills h1::after {
+  content: "";
+  display: block;
+  width: 75px; /* Adjust the width of the underline */
+  height: 3px; /* Thickness of the underline */
+  background-color: white; /* Change to a preferred color */
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+#skills h1:hover::after{
+  width: 200px;
+}
  
   

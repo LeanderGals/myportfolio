@@ -26,21 +26,15 @@ const Skills = () => {
   ];
 
   return (
-    <motion.section 
-      id="skills"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false, amount: 0.3 }}
-    >
-      <motion.h2 
+    <section id="skills">
+      <motion.h1 
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: false, amount: 0.3 }}
       >
         My Skills
-      </motion.h2>
+      </motion.h1>
 
       <div className="containerSkills">
         
@@ -104,7 +98,7 @@ const Skills = () => {
         </motion.div>
 
       </div>
-    </motion.section>
+    </section>
   );
 };
 
