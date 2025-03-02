@@ -58,3 +58,93 @@ footer p {
   color: white;
   
 }
+
+@media (min-width: 320px) {
+  /*header*/
+  .headerContainer{
+    justify-content: space-between;
+    padding: 0 1rem 0 1.5rem;
+  }
+  .site-logo{
+    height: 2.1rem;
+  }
+  .logoname{
+    width: auto;
+  }
+  .logoname p{
+    font-size: 0.6rem;
+  }
+
+  /*homepage*/
+  .homeContainer{
+    padding-top: 5rem;
+  }
+  .homePicnText{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5.5rem 0 0 0 ;
+  }
+  .hometext{
+      gap: 1.5rem;
+      padding: 0;
+      align-items: center;
+      text-align: center;
+  }
+  .nametext h1{
+    font-size: 1.7rem;
+  }
+  .nametext p{
+      font-size: 0.7rem;
+  } 
+  .sm{
+      width: 1.5rem;
+      height: auto;
+  }
+  .socmed{
+    justify-content: center;
+  }
+  .downloadbtn button{
+      font-size: .8rem;
+  }
+  .mypic img{
+    width: 25rem;
+}
+
+  /*aboutpage*/
+
+  .aboutMe img{
+    display: none;
+  }
+  .aboutMeText h1{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .aboutMeText p{
+    width: 15rem;
+    height: auto;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  /*edducationpage*/
+  .educText h1{
+    font-size: 1.3rem;
+  }
+  .educText p{
+    font-size: 0.7rem;
+  }
+
+  /*skillspage*/
+
+
+  /*projectpage*/
+
+
+  /*contactpage*/
+
+
+  /*footerpage*/
+
+
+}

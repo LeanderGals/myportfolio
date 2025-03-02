@@ -54,6 +54,22 @@ const Home = () => {
             </div>
 
             <div className="cvandsm">
+              <motion.div 
+                className="downloadbtn"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
+                viewport={{ once: false, amount: 0.3 }}
+              >
+                <a href="/LG_resume_2025.pdf" download>
+                  <motion.button 
+                    whileHover={{ scale: 1.1 }} 
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Download CV
+                  </motion.button>
+                </a>
+              </motion.div>
               <div className="socmed">
                 <motion.a 
                   href="https://www.facebook.com/leander.galasanay" 
@@ -86,22 +102,7 @@ const Home = () => {
                 </motion.a>
               </div>
 
-              <motion.div 
-                className="downloadbtn"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
-                viewport={{ once: false, amount: 0.3 }}
-              >
-                <a href="/LG_resume_2025.pdf" download>
-                  <motion.button 
-                    whileHover={{ scale: 1.1 }} 
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    Download CV
-                  </motion.button>
-                </a>
-              </motion.div>
+              
             </div>
           </motion.div>
 
