@@ -74,6 +74,27 @@ footer p {
   .logoname p{
     font-size: 0.6rem;
   }
+  .header {
+    flex-direction: column;
+    height: auto; 
+  }
+
+  .header-nav {
+    display: none; 
+  }
+
+  .header-nav.open {
+    display: flex; 
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+  .header-nav.open a {
+    align-items: center;
+  }
+  .navbar-toggle {
+    display: block; 
+  }
+
 
   /*homepage*/
   .homeContainer{
@@ -186,6 +207,7 @@ footer p {
     margin-top: 1.5rem;
   }
   .skillsList{
+    z-index: 2;
   }
   .category{
     align-items: center;
@@ -196,12 +218,73 @@ footer p {
   .skill-buttons{
     justify-content: center;
   }
+  .skillsImg{
+    z-index: 1;
+    opacity: 0.5;
+
+  }
+  .skillsImg img{
+    opacity: 0.5;
+  }
 
 
   /*projectpage*/
-
+  .containerProj{
+    padding: 2rem 1rem 2rem 1rem;
+  }
+  .containerProj h1 {
+    font-size: 1.3rem;
+  }
+  .projectsGrid{
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCard{
+    width: 18rem ;
+  }
+  .projectSwiper {
+    width: 90%;
+    height: auto;
+  }
+  .projectCard h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .projectCard p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .techStack {
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+  }
 
   /*contactpage*/
+  #contact{
+    padding: 2rem 1rem 5rem 1rem;
+  }
+  #contact h1 {
+  font-size: 1.3rem;
+  padding-bottom: 0.5;
+  }
+  .containerContact {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .contactIcon img {
+    width: 9rem;
+  }
+
+  .contactInfo input,
+  .contactInfo textarea {
+    width: 250px;
+  }
+  .scrollToTop {
+    bottom: 3rem;
+  }
 
 
   /*footerpage*/

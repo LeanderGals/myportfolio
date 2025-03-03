@@ -52,11 +52,12 @@ const Projects = () => {
     <section id='projects' ref={ref}>
       <motion.div 
         className="containerProj"
+              >
+        <motion.h1 
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.8 }}
-      >
-        <h1>My Projects</h1>
+        >My Projects</motion.h1>
         <div className="projectsGrid">
           {projectsData.map((project, index) => (
             <motion.div 

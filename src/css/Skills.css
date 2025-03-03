@@ -64,12 +64,12 @@
   }
   
   .skill-buttons button:hover {
-    background: darkblue;
+    background: rgb(44, 44, 216);
   }
   
   .skillsImg {
-    width: 400px;
-    height: 400px;
+    width: 10rem;
+    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,8 +80,8 @@
   }
   
   .skillsImg img {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 10rem;
+    height: auto;
   }
   
   #skills h1 {
