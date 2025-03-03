@@ -7,14 +7,12 @@
     background-size: cover;  /* Ensures the image covers the entire section */
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;  /* Prevents tiling */
-    height: 100vh; 
     min-height: 100vh;
     min-width: 100vw; /* Makes sure it takes the full viewport height */
     display: flex;  /* Keeps your content centered if needed */
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-top: 150px;
     overflow: hidden;
 }
 .homePicnText{

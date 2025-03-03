@@ -1,13 +1,11 @@
 #contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-image: url("../images/bg1.jpg"); /* Background image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 120vh; 
     min-width: 100vw;
     color: white;
     text-align: center;

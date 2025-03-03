@@ -23,8 +23,6 @@ html {
 
 }
 
-
-
 .container{
   display: flex;
   justify-content: center;
@@ -97,14 +95,12 @@ footer p {
 
 
   /*homepage*/
-  .homeContainer{
-    padding-top: 5rem;
-  }
   .homePicnText{
       display: flex;
       justify-content: center;
       flex-direction: column;
       padding: 5.5rem 0 0 0 ;
+      
   }
   .hometext{
       gap: 1.5rem;
@@ -133,16 +129,22 @@ footer p {
 }
 
   /*aboutpage*/
-
+  .aboutContainer{
+    padding: 3rem 0 3rem 0;
+  }
+  .aboutMeText{
+    width: 90%;
+    align-items: center;
+  }
   .aboutMe img{
     display: none;
   }
   .aboutMeText h1{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
   }
   .aboutMeText p{
-    width: 15rem;
+    width: 90%;
     height: auto;
     font-size: 0.7rem;
     text-align: center;
@@ -150,7 +152,8 @@ footer p {
 
   /*edducationpage*/
   .containerEduc{
-    padding-bottom: 2rem;
+    padding: 3rem 0 3rem 0;
+    gap: 3rem;
   }
   .educText h1{
     font-size: 1.3rem;
@@ -186,16 +189,16 @@ footer p {
     margin-left: 2rem;
   }
   .timeline-item:nth-child(odd)::before {
-    left: -4rem;
+    left: -3.7rem;
   }
   .timeline-item:nth-child(even)::before {
-    left: -2.3rem;
+    left: -2rem;
   }
 
 
   /*skillspage*/
   #skills{
-    padding: 1rem 0 3rem 0;
+    padding: 3rem 0 3rem 0;
   }
   #skills h1{
     font-size: 1.3rem;
@@ -230,7 +233,7 @@ footer p {
 
   /*projectpage*/
   .containerProj{
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 3rem 1rem 3rem 1rem;
   }
   .containerProj h1 {
     font-size: 1.3rem;
@@ -240,7 +243,7 @@ footer p {
     align-items: center;
   }
   .projectCard{
-    width: 18rem ;
+    width: 90% ;
   }
   .projectSwiper {
     width: 90%;
@@ -261,7 +264,7 @@ footer p {
 
   /*contactpage*/
   #contact{
-    padding: 2rem 1rem 5rem 1rem;
+    padding: 3rem 1rem 5rem 1rem;
   }
   #contact h1 {
   font-size: 1.3rem;
@@ -271,7 +274,7 @@ footer p {
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   .contactIcon img {
@@ -282,12 +285,140 @@ footer p {
   .contactInfo textarea {
     width: 250px;
   }
+  .contactInfo button{
+    width: 100%;
+  }
   .scrollToTop {
     bottom: 3rem;
   }
+}
+
+@media (min-width: 425px){
+   /*header*/
+   .headerContainer{
+    justify-content: space-between;
+    padding: 0 1rem 0 1.5rem;
+  }
+  .site-logo{
+    height: 2.3rem;
+  }
+ 
+  .logoname p{
+    font-size: 0.7rem;
+  }
+
+  /*homepage*/
+  .homePicnText{
+    padding: 7rem 0 0 0 ;
+      
+  }
+  
+  .nametext h1{
+    font-size: 2rem;
+  }
+  .nametext p{
+      font-size: 0.9rem;
+  } 
+  .sm{
+      width: 1.8rem;
+  }
+
+  .downloadbtn button{
+      font-size: 0.9rem;
+  }
+  .mypic img{
+    width: 28rem;
+}
+
+  /*aboutpage*/
+  .aboutMeText h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .aboutMeText p{
+    width: 90%;
+    height: auto;
+    font-size: 0.9rem;
+  }
+
+  /*edducationpage*/
+ 
+  .educText h1{
+    font-size: 1.5rem;
+  }
+  .educText p{
+    font-size: 0.9rem;
+  }
+  
+
+  .timeline-item{ 
+    gap: 0.5rem;
+  }
+  .timeline-item h3{
+    font-size: 1.2rem;
+  }
+  .timeline-item p{
+    font-size: 0.9rem;
+  }
+  
 
 
-  /*footerpage*/
+  /*skillspage*/
+
+  #skills h1{
+    font-size: 1.5rem;
+  }
+  .skillsImg img {
+    width: 10rem;
+  }
 
 
+  /*projectpage*/
+  .containerProj h1 {
+    font-size: 1.5rem;
+  }
+  .projectsGrid{
+    padding: 1rem 0 0 0;
+  }
+  .projectCard{
+    width: 85% ;
+  }
+  .projectCard h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .projectCard p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /*contactpage*/
+  #contact{
+    padding: 3rem 1rem 7rem 1rem;
+  }
+  #contact h1 {
+  font-size: 1.5rem;
+  }
+  .containerContact {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .contactIcon img {
+    width: 9rem;
+  }
+
+  .contactInfo input,
+  .contactInfo textarea {
+    width: 22rem;
+  }
+  .contactInfo button{
+    width: 100%;
+  }
+  .scrollToTop {
+    bottom: 3rem;
+  }
+  
 }

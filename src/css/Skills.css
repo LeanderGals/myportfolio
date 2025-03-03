@@ -10,7 +10,7 @@
     background-position: center;  /* Centers the image */
     background-repeat: no-repeat;    
     min-width: 100vw;
-    min-height: 120vh;
+    min-height: auto;
     color: white;
     overflow: hidden;
   }
@@ -80,8 +80,9 @@
   }
   
   .skillsImg img {
-    max-width: 10rem;
+    width: 8rem;
     height: auto;
+    border-radius: 1rem;
   }
   
   #skills h1 {
