@@ -30,7 +30,7 @@ const Skills = () => {
       <motion.h1 
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         viewport={{ once: false, amount: 0.3 }}
       >
         My Skills
@@ -46,7 +46,7 @@ const Skills = () => {
               key={index}
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut", delay: index * 0.2 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: index * 0.1 }}
               viewport={{ once: false, amount: 0.3 }}
             >
               <h3>{category.title}</h3>
@@ -74,7 +74,7 @@ const Skills = () => {
           className="skillsImg"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3 }}
         >
           {hoveredSkill ? (

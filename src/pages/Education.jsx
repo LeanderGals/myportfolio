@@ -33,7 +33,7 @@ const Education = () => {
           className="educText"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3 }} 
         >
           <h1>Educational Background</h1>
@@ -51,7 +51,7 @@ const Education = () => {
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
               viewport={{ once: false, amount: 0.3 }} // Triggers animation when at least 30% of element is visible
             >
               <h3>{item.school}</h3>

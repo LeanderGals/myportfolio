@@ -9,7 +9,7 @@ const About = () => {
       id='about'
       initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
       whileInView={{ opacity: 1, y: 0 }} // Animate into view
-      transition={{ duration: 1, ease: "easeOut" }} // Smooth effect
+      transition={{ duration: 0.7, ease: "easeOut" }} // Smooth effect
       viewport={{ once: true, amount: 0.2 }} // Trigger animation when 20% of the section is visible
     >
       <div className="aboutContainer">
@@ -17,7 +17,7 @@ const About = () => {
           className="aboutMe"
           initial={{ opacity: 0, x: -50 }} 
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
         >
           <img src={AboutIcon} alt="About Icon" />
         </motion.div>
@@ -26,7 +26,7 @@ const About = () => {
           className="aboutMeText"
           initial={{ opacity: 0, x: 50 }} 
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
         >
           <h1>About Me</h1>
           <p>

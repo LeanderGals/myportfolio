@@ -57,7 +57,7 @@ const Contact = () => {
       <motion.h1 
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: false, amount: 0.3 }}
       >
         Contact Me
@@ -68,7 +68,7 @@ const Contact = () => {
           className="contactIcon"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: false, amount: 0.3 }}
         >
           <img src={ContactIcon} alt="Contact" />
@@ -78,7 +78,7 @@ const Contact = () => {
           className="contactInfo"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: false, amount: 0.3 }}
         >
           <form onSubmit={handleSubmit}>
@@ -91,7 +91,7 @@ const Contact = () => {
               required
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
               viewport={{ once: false, amount: 0.3 }}
             />
 
@@ -104,7 +104,7 @@ const Contact = () => {
               required
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
               viewport={{ once: false, amount: 0.3 }}
             />
 
@@ -116,7 +116,7 @@ const Contact = () => {
               required
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut", delay: 0.7 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
               viewport={{ once: false, amount: 0.3 }}
             ></motion.textarea>
 
@@ -124,7 +124,7 @@ const Contact = () => {
               type="submit"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, ease: "easeOut", delay: 0.8 }}
+              transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
               viewport={{ once: false, amount: 0.3 }}
             >
               Send Message
