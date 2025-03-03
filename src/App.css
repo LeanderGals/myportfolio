@@ -7,7 +7,7 @@
   font-family: 'Exo', sans-serif;
 }
 
-body {
+html, body {
   font-family: 'Exo', sans-serif;
   margin: 0 auto;
   justify-content: center;
@@ -128,14 +128,74 @@ footer p {
   }
 
   /*edducationpage*/
+  .containerEduc{
+    padding-bottom: 2rem;
+  }
   .educText h1{
     font-size: 1.3rem;
   }
   .educText p{
     font-size: 0.7rem;
   }
+  .timeline{
+    width: 90%;
+  }
+  .timeline::before{
+    left: 1rem;
+  }
+  .timeline-item{
+    min-width: 90%;
+    left: 60px; 
+  }
+  .timeline-item h3{
+    font-size: 1rem;
+  }
+  .timeline-item p{
+    font-size: 0.7rem;
+  }
+  .timeline-item::before{
+    left: -60px;
+  }
+  .timeline-item:nth-child(odd) {
+    margin-left: 2rem;
+    left: 0;
+  }
+  .timeline-item:nth-child(even) {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+  .timeline-item:nth-child(odd)::before {
+    left: -4rem;
+  }
+  .timeline-item:nth-child(even)::before {
+    left: -2.3rem;
+  }
+
 
   /*skillspage*/
+  #skills{
+    padding: 1rem 0 3rem 0;
+  }
+  #skills h1{
+    font-size: 1.3rem;
+  }
+  
+  .containerSkills{
+    width: 90%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  .skillsList{
+  }
+  .category{
+    align-items: center;
+  }
+  .category h3{
+    text-align: center;
+  }
+  .skill-buttons{
+    justify-content: center;
+  }
 
 
   /*projectpage*/
