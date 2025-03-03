@@ -243,10 +243,10 @@ footer p {
     align-items: center;
   }
   .projectCard{
-    width: 90% ;
+    width: 80% ;
   }
   .projectSwiper {
-    width: 90%;
+    width: 50%;
     height: auto;
   }
   .projectCard h3 {
@@ -421,4 +421,184 @@ footer p {
     bottom: 3rem;
   }
   
+}
+
+@media (min-width: 768px){
+  /*header*/
+  .headerContainer{
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 2.5rem;
+  }
+  .site-logo{
+    height: 3rem;
+  }
+  .logoname{
+    width: auto;
+  }
+  .logoname p{
+    font-size: 1rem;
+  }
+
+  /*homepage*/
+  .homePicnText{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .hometext{
+      gap: 2rem;
+      padding: 0;
+      align-items: center;
+      text-align: center;
+  }
+  .nametext h1{
+    font-size: 3rem;
+  }
+  .nametext p{
+      font-size: 1.3rem;
+  } 
+  .sm{
+      width: 2.5rem;
+      height: auto;
+  }
+  .socmed{
+    justify-content: center;
+  }
+  .downloadbtn button{
+      font-size: 1.2rem;
+  }
+  .mypic img{
+    width: 40rem;
+}
+
+  /*aboutpage*/
+  .aboutMeText h1{
+    font-size: 2.2rem;
+  }
+  .aboutMeText p{
+    font-size: 1.3rem;
+  }
+
+  /*edducationpage*/
+  .educText h1{
+    font-size: 2.2rem;
+  }
+  .educText p{
+    font-size: 1.3rem;
+  }
+  .timeline{
+    width: 90%;
+  }
+  .timeline::before{
+    left: 1rem;
+  }
+  .timeline-item{
+    min-width: 90%;
+    left: 60px; 
+  }
+  .timeline-item h3{
+    font-size: 1.6rem;
+  }
+  .timeline-item p{
+    font-size: 1.2rem;
+  }
+
+  /*skillspage*/
+  #skills{
+    padding: 3rem 0 3rem 0;
+  }
+  #skills h1{
+    font-size: 2.2rem;
+  }
+  .containerSkills{
+    justify-content: center;
+    width: 80%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  .skillsImg{
+    width: 15rem;
+  }
+  .skill-buttons button {
+    font-size: 1.5rem;
+  }
+  
+
+
+  /*projectpage*/
+  .containerProj{
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  .containerProj h1 {
+    font-size: 2.2rem;
+  }
+  .projectsGrid{
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCard{
+    width: 80% ;
+  }
+  .projectSwiper {
+    width: 50%;
+    height: auto;
+  }
+
+  .projectCard h3 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .projectCard p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .techStack{
+    gap: 1rem;
+  }
+  .techBadge{
+    font-size: 1.4rem;
+  }
+
+  /*contactpage*/
+  #contact{
+    padding: 3rem 1rem 9rem 1rem;
+  }
+  #contact h1 {
+  font-size: 2.2rem;
+  padding-bottom: 0.5;
+  }
+  .containerContact {
+    flex-direction: row;
+    gap: 5rem;
+    width: 90%;
+    margin-top: 2rem;
+    padding: 2rem 1rem 2rem 1rem;
+  }
+
+  .contactIcon img {
+    width: 10rem;
+  }
+
+  .contactInfo input,
+  .contactInfo textarea {
+    width: 20rem;
+  }
+  .contactInfo button{
+    width: 50%;
+  }
+  .scrollToTop {
+    bottom: 3rem;
+  }
+  
+  /*footer*/
+  footer{
+    padding: 3rem 0 3rem 0;
+  }
+  footer p{
+    font-size: 1.3rem;
+  }
+  footer img{
+    width: 3rem;
+    height: auto;
+  }
 }

@@ -14,21 +14,21 @@ const Home = () => {
           className="homePicnText"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: false, amount: 0.3 }}
         >
           <motion.div 
             className="hometext"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
             viewport={{ once: false, amount: 0.3 }}
           >
             <div className="nametext">
               <motion.p
                 initial={{ opacity: 0, y: -10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
                 Hi there,
@@ -37,7 +37,7 @@ const Home = () => {
               <motion.h1
                 initial={{ opacity: 0, y: -10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: "easeOut", delay: 0.7 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
                 I'm Leander Galasanay
@@ -46,7 +46,7 @@ const Home = () => {
               <motion.p
                 initial={{ opacity: 0, y: -10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
                 A Front-End Developer based in the Philippines
@@ -58,7 +58,7 @@ const Home = () => {
                 className="downloadbtn"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
                 <a href="/LG_resume_2025.pdf" download>
@@ -110,7 +110,7 @@ const Home = () => {
             className="mypic"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
             viewport={{ once: false, amount: 0.3 }}
           >
             <img src={Mypic} alt="Leander Galasanay" />
