@@ -30,7 +30,7 @@ const About = () => {
         >
           <h1>About Me</h1>
           <p>
-            Hi, I'm Leander Galasanay, a recent Bachelor of Science in Information Technology graduate from USTP. 
+            Hi, I'm <strong>Leander Galasanay</strong>, a recent Bachelor of Science in Information Technology graduate from USTP. 
             I have a passion for web development, IoT, and software engineering. 
           </p>
           <p>
