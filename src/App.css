@@ -278,9 +278,13 @@ footer p {
   }
 
   .contactIcon img {
-    width: 9rem;
+    width: 10rem;
   }
-
+  .socialMediaSection p {
+    font-size: 0.8rem;
+    color: white;
+    margin-bottom: 10px;
+  }
   .contactInfo input,
   .contactInfo textarea {
     width: 250px;
@@ -407,7 +411,14 @@ footer p {
   }
 
   .contactIcon img {
-    width: 9rem;
+    width: 11rem;
+  }
+  .socialMediaSection p {
+    font-size: 0.9rem;
+  }
+  .sm2{
+    width: 3rem;
+
   }
 
   .contactInfo input,
@@ -578,7 +589,9 @@ footer p {
   .contactIcon img {
     width: 10rem;
   }
-
+  .sm2{
+    width: 2.5rem;
+  }
   .contactInfo input,
   .contactInfo textarea {
     width: 20rem;
@@ -677,7 +690,7 @@ footer p {
 
   /*aboutpage*/
   .aboutContainer{
-    padding: 3rem 2rem 3rem 2rem;
+    padding: 3rem 2rem 3rem 4rem;
     align-items: center;
   }
   .aboutMeText{
@@ -1098,7 +1111,12 @@ footer p {
   .contactIcon img {
     width: 18rem;
   }
-
+  .socialMediaSection p {
+    font-size: 1.1rem;
+  }
+  .sm2{
+    width: 2.8rem;
+  }
   .contactInfo input,
   .contactInfo textarea {
     width: 28rem;

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ContactIcon from '../images/contact.png';
+import Fb from '../images/fb.png';
+import Ig from '../images/ig.png';
+import X from '../images/x.png';
 import '../css/Contact.css';
 
 const Contact = () => {
@@ -40,11 +43,7 @@ const Contact = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowScrollButton(true);
-      } else {
-        setShowScrollButton(false);
-      }
+      setShowScrollButton(window.scrollY > 200);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -52,8 +51,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <section 
-      id="contact">
+    <section id="contact">
       <motion.h1 
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -138,6 +136,43 @@ const Contact = () => {
           >
             {status}
           </motion.p>
+
+          {/* New Section: Message through Social Media */}
+          <div className="socialMediaSection">
+            <p>Or contact me via my social media accounts.</p>
+            <div className="socmed2">
+                            <motion.a 
+                              href="https://www.facebook.com/leander.galasanay" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                            >
+                              <img className="sm2" src={Fb} alt="Facebook" />
+                            </motion.a>
+            
+                            <motion.a 
+                              href="https://www.instagram.com/your-profile" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                            >
+                              <img className="sm2" src={Ig} alt="Instagram" />
+                            </motion.a>
+            
+                            <motion.a 
+                              href="https://twitter.com/your-profile" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                            >
+                              <img className="sm2" src={X} alt="Twitter/X" />
+                            </motion.a>
+                          </div>
+          </div>
+
         </motion.div>
       </div>
 
@@ -146,7 +181,6 @@ const Contact = () => {
           &#8679;
         </button>
       )}
-
     </section>
   );
 };

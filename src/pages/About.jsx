@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AboutIcon from '../images/abouticon.png';
+import AboutIcon from '../images/abouticon1.png';
 import '../css/About.css';
 
 const About = () => {

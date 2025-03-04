@@ -160,4 +160,30 @@
     transform: scale(1.1);
   }
   
-  
+  .socialMediaSection {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.socialMediaSection p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.socmed2 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sm2 {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sm:hover {
+  transform: scale(1.1);
+}
