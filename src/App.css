@@ -1133,10 +1133,250 @@ footer p {
     padding: 1rem 0 1rem 0;
   }
   footer p{
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   footer img{
-    width: 2rem;
+    width: 2.3rem;
+    height: auto;
+  }
+}
+
+@media (min-width: 2560px){
+  /*header*/
+  .headerContainer{
+    justify-content: space-around;
+    padding: 0.7rem 1rem 0.7rem 1.5rem;
+  }
+  .site-logo{
+    height: 3.3rem;
+  }
+  .logoname{
+    width: auto;
+  }
+  .logoname p{
+    font-size: 1.1rem;
+  }
+  .header-nav a{
+    font-size: 1.3rem;
+  }
+  .contactbtn button{
+    font-size: 1.3rem;
+
+  }
+
+
+  /*homepage*/
+  .hometext{
+      gap: 3.5rem;
+      padding: 0 0 0 5rem;
+      align-items: flex-start;
+      text-align: left;
+
+  }
+  .nametext h1{
+    font-size: 3.8rem;
+  }
+  .nametext p{
+      font-size: 2rem;
+  } 
+
+  .downloadbtn button{
+      font-size: 1.7rem;
+  }
+  .mypic img{
+    width: 65rem;
+
+  }
+  .sm{
+    width: 4rem;
+  }
+  .cvandsm{
+    gap: 1rem;
+  }
+
+  /*aboutpage*/
+  .aboutContainer{
+    padding: 5rem 2rem 5rem 2rem;
+    align-items: center;
+  }
+  .aboutMeText{
+    width: 60%;
+    align-items: center;
+  }
+  .aboutMe img{
+    display: flex;
+    width: 22rem;
+  }
+  .aboutMeText h1{
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  .aboutMeText p{
+    font-size: 1.7rem;
+  }
+
+  /*edducationpage*/
+  .containerEduc{
+    padding: 5rem 0 5rem 0;
+    gap: 3rem;
+  }
+  .educText h1{
+    font-size: 2.7rem;
+  }
+  .educText p{
+    font-size: 1.7rem;
+  }
+  .timeline{
+    max-width: 40rem;
+    padding: 0 5rem 0 5rem;
+  }
+  .timeline-item{
+    width: 40rem;
+    padding: 2rem;
+  }
+  .timeline-item h3{
+    font-size: 1.7rem;
+  }
+  .timeline-item p{
+    font-size: 1.5rem;
+  }
+  .timeline-item:nth-child(odd) {
+    left: 65.5%;
+
+  }
+  .timeline-item:nth-child(even) {
+    left: -115%;
+
+  }
+  .timeline-item:nth-child(odd)::before {
+    left: -8.4rem;
+  }
+  .timeline-item:nth-child(even)::before {
+    left: 119%; /* Move it to the right of the timeline */
+  }
+
+
+  /*skillspage*/
+  #skills{
+    padding: 5rem 0 5rem 0;
+  }
+  #skills h1{
+    font-size: 2.7rem;
+  }
+  
+  .containerSkills{
+    width: 60%;
+    padding: 5rem;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .skillsList{
+    z-index: 2;
+  }
+  .category{
+    align-items: flex-start;
+  }
+  .category h3{
+    text-align: left;
+    font-size: 1.7rem;
+  }
+  .skill-buttons button{
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .skillsImg{
+    z-index: 1;
+    width: 35rem;
+    height: auto;
+    bottom: 5rem;
+  }
+  .skillsImg img{
+    width: 25rem;
+
+  }
+
+  /*projectpage*/
+  .containerProj{
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  .containerProj h1 {
+    font-size: 2.7rem;
+  }
+  .projectsGrid{
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .projectCard{
+    width: 23% ;
+    min-height: 28rem;  
+    padding: 3rem;
+  }
+  .projectSwiper {
+    width: 50%;
+    height: auto;
+  }
+  .projectCard h3 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .projectCard p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .techBadge {
+    font-size: 1.3rem;
+  }
+
+
+  /*contactpage*/
+   /*contactpage*/
+   #contact{
+    padding: 3rem 1rem 9rem 1rem;
+  }
+  #contact h1 {
+  font-size: 2.7rem;
+  padding-bottom: 0.5;
+  }
+  .containerContact {
+    flex-direction: row;
+    gap: 5rem;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    padding: 4rem 1rem 3rem 1rem;
+  }
+  
+  .contactIcon img {
+    width: 25rem;
+  }
+  .socialMediaSection p {
+    font-size: 1.3rem;
+  }
+  .sm2{
+    width: 3rem;
+  }
+  .contactInfo input,
+  .contactInfo textarea {
+    width: 33rem;
+  }
+  .contactInfo button{
+    width: 50%;
+  }
+  .scrollToTop {
+    bottom: 3rem;
+  }
+
+  /*footer*/
+  footer{
+    padding: 3rem 0 3rem 0;
+  }
+  footer p{
+    font-size: 1.5rem;
+  }
+  footer img{
+    width: 3rem;
     height: auto;
   }
 }
