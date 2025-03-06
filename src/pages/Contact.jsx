@@ -152,7 +152,7 @@ const Contact = () => {
                             </motion.a>
             
                             <motion.a 
-                              href="https://www.instagram.com/your-profile" 
+                              href="https://www.instagram.com/le_gals15/" 
                               target="_blank" 
                               rel="noopener noreferrer"
                               whileHover={{ scale: 1.1 }}
@@ -162,7 +162,7 @@ const Contact = () => {
                             </motion.a>
             
                             <motion.a 
-                              href="https://twitter.com/your-profile" 
+                              href="https://x.com/le_gals" 
                               target="_blank" 
                               rel="noopener noreferrer"
                               whileHover={{ scale: 1.1 }}

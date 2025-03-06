@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AboutIcon from '../images/abouticon1.png';
+import AboutIcon from '../images/abouticon2.png';
 import '../css/About.css';
 
 const About = () => {
@@ -31,10 +31,10 @@ const About = () => {
           <h1>About Me</h1>
           <p>
             Hi, I'm <strong>Leander Galasanay</strong>, a recent Bachelor of Science in Information Technology graduate from USTP. 
-            I have a passion for web development, IoT, and software engineering. 
+            I have a passion for web and mobile development and IoT. 
           </p>
           <p>
-            Throughout my academic journey, I have worked on projects that blend software and hardware, such as the Clothesline IoT System, which automates clothes protection during rain using smart sensors. 
+            Throughout my academic journey, I have worked on projects that blend software and hardware, such as the Clothesline IoT System, which automates clothes protection during rain using smart sensors and a Microalgae Cultivation App that monitors the healthyness of microalgaes. 
             I also developed a campus navigation website for USTP using React JS, enhancing accessibility for students. I thrive on solving complex problems and continuously learning new technologies.
           </p>
         </motion.div>

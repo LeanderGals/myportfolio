@@ -38,9 +38,8 @@ const Education = () => {
         >
           <h1>Educational Background</h1>
           <p>
-            My educational background shows my unwavering commitment to lifelong learning and personal development. 
-            It attests to my unwavering pursuit of information and skill development in order to excel in my chosen field.
-          </p>
+          My academic journey reflects my strong dedication to continuous learning and personal growth. 
+          It demonstrates my persistent pursuit of knowledge and skill enhancement to excel in my chosen field.          </p>
         </motion.div>
 
         {/* Timeline Section (Each item animates separately) */}
