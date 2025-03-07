@@ -49,7 +49,7 @@ const Home = () => {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
-                A Front-End Developer based in the Philippines
+                A <strong>Front-End Developer</strong> based in the Philippines
               </motion.p>
             </div>
 
