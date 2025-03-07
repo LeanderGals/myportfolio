@@ -22,21 +22,21 @@ import algae3 from '../images/algae3.png';
 const projectsData = [
  
   {
-    title: "Move It App Integration",
-    description: "A mobile app using Expo for navigation and motorcycle ride services. Improved onboarding screens, button styles, and UI responsiveness.",
-    technologies: ["React Native", "Expo", "LottieView"],
+    title: "Clothesline App",
+    description: "The Clothesline App is a smart IoT solution that detects rain using sensors and automatically adjusts the clothesline to keep clothes dry. It integrates with Firebase for real-time updates and remote control, making laundry care more convenient and efficient.",
+    technologies: ["React Native", "Firebase", "Arduino", "OpenWeatherMap API", "ESP32", "IoT Sensors"],
     images: [cloth1, cloth2, cloth3, cloth4],
   },
   {
-    title: "Campus Navigation Website",
-    description: "An interactive website for USTP students to navigate campus buildings using an image map. Features a responsive design with dynamic UI interactions.",
-    technologies: ["React.js", "CSS", "Image Mapping"],
+    title: "USTP Map Navigation",
+    description: "The USTP Map Nav is a React-based navigation system designed to help users explore the USTP campus. It features an interactive campus map with building-specific images and responsive buttons for easy navigation.",
+    technologies: ["React JS", "Image Mapping"],
     images: [campusNav1, campusNav2],
   },
   {
-    title: "IoT Clothesline System",
-    description: "An IoT project that automatically retracts clothes when it detects rain, using an ESP32 microcontroller with sensors and Firebase.",
-    technologies: ["ESP32", "Arduino", "Firebase", "IoT"],
+    title: "LUMOTech App",
+    description: "LUMOtech is a microalgae monitoring app designed to track algae growth in real time. It utilizes IoT sensors and data visualization to provide accurate monitoring, helping researchers and aquaculture industries maintain optimal conditions for algae cultivation. ",
+    technologies: ["React Native", "ESP 8266", "Arduino", "Websocket", "IoT Sensors"],
     images: [algae1, algae2, algae3],
   },
 

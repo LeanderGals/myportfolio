@@ -35,6 +35,14 @@ const Skills = () => {
       >
         My Skills
       </motion.h1>
+      <motion.p
+         initial={{ opacity: 0, x: -50 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+         viewport={{ once: false, amount: 0.3 }}
+      >
+      I am an IT graduate with a passion for creating user-friendly and efficient digital solutions.
+      </motion.p>
 
       <div className="containerSkills">
         

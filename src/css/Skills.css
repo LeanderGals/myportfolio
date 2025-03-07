@@ -5,10 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/bg5.jpg"); /* Update with your actual image path */
-    background-size: cover;  /* Ensures the image covers the entire section */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;    
+    background-image: linear-gradient(to right bottom, #1c325b, #1c305f, #1d2e63, #212b66, #262869, #27266b, #28236d, #2a206f, #271e71, #241b74, #201976, #1c1678);
     min-width: 100vw;
     min-height: auto;
     color: white;
@@ -19,13 +16,16 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background: rgba(87, 87, 87, 0.5);
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
     padding: 20px 50px;
     border-radius: 10px;
     width: 60%;
     height: 80%;
     margin: auto;
     position: relative;
+  }
+  #skills p{
+    font-size: 1rem;
   }
   
   .skillsList {

@@ -12,7 +12,14 @@ const About = () => {
       transition={{ duration: 0.7, ease: "easeOut" }} // Smooth effect
       viewport={{ once: true, amount: 0.2 }} // Trigger animation when 20% of the section is visible
     >
+       <motion.h1 
+          initial={{ opacity: 0, x: 50 }} 
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+        >About Me</motion.h1>
+        
       <div className="aboutContainer">
+       
         <motion.div 
           className="aboutMe"
           initial={{ opacity: 0, x: -50 }} 
@@ -28,7 +35,6 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
         >
-          <h1>About Me</h1>
           <p>
             Hi, I'm <strong>Leander Galasanay</strong>, a recent Bachelor of Science in Information Technology graduate from USTP. 
             I have a passion for web and mobile development and IoT. 

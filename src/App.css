@@ -129,15 +129,27 @@ footer p {
 }
 
   /*aboutpage*/
-  .aboutContainer{
-    padding: 3rem 0 3rem 0;
+  #about{
+    padding: 4rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   }
+  .aboutContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
   .aboutMeText{
     width: 90%;
     align-items: center;
   }
   .aboutMe img{
-    display: none;
+    width: 10rem;
+    margin-bottom: 1rem;
   }
   .aboutMeText h1{
     font-size: 1.3rem;
@@ -146,20 +158,20 @@ footer p {
   .aboutMeText p{
     width: 90%;
     height: auto;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: center;
   }
 
   /*edducationpage*/
   .containerEduc{
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 4rem 1rem;
     gap: 3rem;
   }
   .educText h1{
     font-size: 1.3rem;
   }
   .educText p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .timeline{
     width: 90%;
@@ -198,12 +210,16 @@ footer p {
 
   /*skillspage*/
   #skills{
-    padding: 3rem 0 3rem 0;
+    padding: 4rem 2rem 4rem 2rem;
   }
   #skills h1{
     font-size: 1.3rem;
+    margin-bottom: 1rem;
   }
-  
+  #skills p{
+    font-size: 0.8rem;
+    text-align: center;
+  }
   .containerSkills{
     width: 90%;
     padding: 1rem;
@@ -217,23 +233,24 @@ footer p {
   }
   .category h3{
     text-align: center;
+    font-size: 1rem;
   }
   .skill-buttons{
     justify-content: center;
+    font-size: 0.9rem;
   }
   .skillsImg{
     z-index: 1;
-    opacity: 0.5;
 
   }
   .skillsImg img{
-    opacity: 0.5;
+    width: 10rem;
   }
 
 
   /*projectpage*/
   .containerProj{
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 4rem 1rem;
   }
   .containerProj h1 {
     font-size: 1.3rem;
@@ -246,7 +263,7 @@ footer p {
     width: 80% ;
   }
   .projectSwiper {
-    width: 50%;
+    width: 80%;
     height: auto;
   }
   .projectCard h3 {
@@ -261,10 +278,13 @@ footer p {
     justify-content: center;
     margin: 2rem 0 1rem 0;
   }
+  .techBadge {
+    font-size: 0.8rem;
+  }
 
   /*contactpage*/
   #contact{
-    padding: 3rem 1rem 5rem 1rem;
+    padding: 4rem 1rem 5rem 1rem;
   }
   #contact h1 {
   font-size: 1.3rem;
@@ -288,12 +308,22 @@ footer p {
   .contactInfo input,
   .contactInfo textarea {
     width: 250px;
+    font-size: 0.8rem;
   }
   .contactInfo button{
     width: 100%;
+    font-size: 0.8rem;
+
   }
   .scrollToTop {
     bottom: 3rem;
+  }
+  footer p{
+    font-size: 0.8rem;
+  }
+  footer img{
+    width: 2rem;
+    height: auto;
   }
 }
 
@@ -344,6 +374,9 @@ footer p {
     height: auto;
     font-size: 0.9rem;
   }
+  .aboutMe img{
+    width: 15rem;
+  }
 
   /*edducationpage*/
  
@@ -375,7 +408,9 @@ footer p {
   .skillsImg img {
     width: 10rem;
   }
-
+  #skills p{
+    font-size: 0.9rem;
+  }
 
   /*projectpage*/
   .containerProj h1 {
@@ -398,7 +433,7 @@ footer p {
 
   /*contactpage*/
   #contact{
-    padding: 3rem 1rem 7rem 1rem;
+    padding: 4rem 1rem 7rem 1rem;
   }
   #contact h1 {
   font-size: 1.5rem;
@@ -424,9 +459,11 @@ footer p {
   .contactInfo input,
   .contactInfo textarea {
     width: 22rem;
+    font-size: 0.9rem;
   }
   .contactInfo button{
     width: 100%;
+    font-size: 0.9rem;
   }
   .scrollToTop {
     bottom: 3rem;
@@ -438,7 +475,7 @@ footer p {
   /*header*/
   .headerContainer{
     justify-content: space-between;
-    padding: 1rem 2rem 1rem 2.5rem;
+    padding: 0.5rem 2rem 0.5rem 2.5rem;
   }
   .site-logo{
     height: 3rem;
@@ -448,6 +485,9 @@ footer p {
   }
   .logoname p{
     font-size: 1rem;
+  }
+  .header-nav.open a {
+    font-size: 1.2rem;
   }
 
   /*homepage*/
@@ -483,14 +523,27 @@ footer p {
 }
 
   /*aboutpage*/
-  .aboutMeText h1{
+  #about{
+    padding: 5rem 0;
+
+  }
+  .aboutContainer{
+    padding: 1rem 0;
+  }
+  #about h1{
     font-size: 2.2rem;
   }
   .aboutMeText p{
     font-size: 1.1rem;
   }
+  .aboutMe img{
+    width: 20rem;
+  }
 
   /*edducationpage*/
+  .containerEduc{
+    padding: 5rem 1rem 4rem 1rem;
+  }
   .educText h1{
     font-size: 2.2rem;
   }
@@ -516,10 +569,14 @@ footer p {
 
   /*skillspage*/
   #skills{
-    padding: 3rem 0 3rem 0;
+    padding: 5rem 2rem 5rem 2rem;
   }
   #skills h1{
     font-size: 2.2rem;
+  }
+  #skills p{
+    font-size: 1.1rem;
+    padding: 0 5rem;
   }
   .containerSkills{
     justify-content: center;
@@ -527,18 +584,23 @@ footer p {
     padding: 1rem;
     margin-top: 1.5rem;
   }
+  .category h3{
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
   .skillsImg{
     width: 15rem;
   }
   .skill-buttons button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   
 
 
   /*projectpage*/
   .containerProj{
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 5rem 1rem 5rem 1rem;
   }
   .containerProj h1 {
     font-size: 2.2rem;
@@ -548,10 +610,11 @@ footer p {
     align-items: center;
   }
   .projectCard{
-    width: 80% ;
+    width: 70% ;
+    padding: 2rem 2rem;
   }
   .projectSwiper {
-    width: 50%;
+    width: 70%;
     height: auto;
   }
 
@@ -567,12 +630,12 @@ footer p {
     gap: 1rem;
   }
   .techBadge{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   /*contactpage*/
   #contact{
-    padding: 3rem 1rem 9rem 1rem;
+    padding: 5rem 1rem 9rem 1rem;
   }
   #contact h1 {
   font-size: 2.2rem;
@@ -580,21 +643,21 @@ footer p {
   }
   .containerContact {
     flex-direction: row;
-    gap: 5rem;
+    gap: 3rem;
     width: 90%;
     margin-top: 2rem;
     padding: 2rem 1rem 2rem 1rem;
   }
 
   .contactIcon img {
-    width: 10rem;
+    width: 15rem;
   }
   .sm2{
     width: 2.5rem;
   }
   .contactInfo input,
   .contactInfo textarea {
-    width: 20rem;
+    width: 18rem;
   }
   .contactInfo button{
     width: 50%;
@@ -605,13 +668,13 @@ footer p {
   
   /*footer*/
   footer{
-    padding: 3rem 0 3rem 0;
+    padding: 2.5rem 0 2.5rem 0;
   }
   footer p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   footer img{
-    width: 3rem;
+    width: 2.5rem;
     height: auto;
   }
 }
@@ -689,8 +752,12 @@ footer p {
 }
 
   /*aboutpage*/
+  #about{
+    padding: 4rem 2rem;
+  }
   .aboutContainer{
-    padding: 3rem 2rem 3rem 4rem;
+    flex-direction: row;
+    padding: 1rem 2rem;
     align-items: center;
   }
   .aboutMeText{
@@ -701,7 +768,7 @@ footer p {
     display: flex;
     width: 15rem;
   }
-  .aboutMeText h1{
+  #about h1{
     font-size: 1.7rem;
     margin-bottom: 1rem;
   }
@@ -714,7 +781,7 @@ footer p {
 
   /*edducationpage*/
   .containerEduc{
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 4rem 1rem;
     gap: 3rem;
   }
   .educText h1{
@@ -767,12 +834,14 @@ footer p {
 
   /*skillspage*/
   #skills{
-    padding: 3rem 0 3rem 0;
+    padding: 4rem 0 4rem 0;
   }
   #skills h1{
     font-size: 1.7rem;
   }
-  
+  #skills p{
+    font-size: 0.8rem;
+  }
   .containerSkills{
     width: 90%;
     padding: 1rem;
@@ -792,12 +861,14 @@ footer p {
   }
   .skill-buttons button{
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .skillsImg{
     z-index: 1;
     width: 25rem;
     height: auto;
+    bottom: 5rem;
+
   }
   .skillsImg img{
     width: 15rem;
@@ -806,7 +877,7 @@ footer p {
 
   /*projectpage*/
   .containerProj{
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 4rem 1rem 4rem 1rem;
   }
   .containerProj h1 {
     font-size: 1.7rem;
@@ -816,8 +887,10 @@ footer p {
     align-items: center;
   }
   .projectCard{
-    width: 40% ;
+    width: 30% ;
     height: auto;
+    padding: 1rem 1rem;
+
   }
   .projectSwiper {
     width: 50%;
@@ -839,10 +912,10 @@ footer p {
   /*contactpage*/
    /*contactpage*/
    #contact{
-    padding: 3rem 1rem 9rem 1rem;
+    padding: 4rem 1rem 9rem 1rem;
   }
   #contact h1 {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   padding-bottom: 0.5;
   }
   .containerContact {
@@ -854,7 +927,7 @@ footer p {
   }
 
   .contactIcon img {
-    width: 10rem;
+    width: 20rem;
   }
 
   .contactInfo input,
@@ -939,9 +1012,14 @@ footer p {
 }
 
   /*aboutpage*/
+  #about{
+    padding: 4rem 2rem;
+    flex-direction: column;
+  }
   .aboutContainer{
-    padding: 3rem 2rem 3rem 2rem;
     align-items: center;
+    flex-direction: row;
+    padding: 1rem 3rem;
   }
   .aboutMeText{
     width: 60%;
@@ -949,11 +1027,10 @@ footer p {
   }
   .aboutMe img{
     display: flex;
-    width: 19rem;
+    width: 25rem;
   }
-  .aboutMeText h1{
+  #about h1{
     font-size: 2rem;
-    margin-bottom: 1rem;
   }
   .aboutMeText p{
     width: 90%;
@@ -964,7 +1041,7 @@ footer p {
 
   /*edducationpage*/
   .containerEduc{
-    padding: 3rem 0 3rem 0;
+    padding: 4rem 0 ;
     gap: 3rem;
   }
   .educText h1{
@@ -1019,12 +1096,14 @@ footer p {
 
   /*skillspage*/
   #skills{
-    padding: 3rem 0 3rem 0;
+    padding: 4rem 0 ;
   }
   #skills h1{
     font-size: 2rem;
   }
-  
+  #skills p{
+    font-size: 1.1rem;
+  }
   .containerSkills{
     width: 80%;
     padding: 1rem 5rem 1rem 5rem;
@@ -1059,7 +1138,7 @@ footer p {
 
   /*projectpage*/
   .containerProj{
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 4rem 1rem;
   }
   .containerProj h1 {
     font-size: 2rem;
@@ -1067,14 +1146,14 @@ footer p {
   .projectsGrid{
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
   }
   .projectCard{
-    width: 23% ;
+    width: 28% ;
     min-height: 28rem;  
   }
   .projectSwiper {
-    width: 60%;
+    width: 80%;
     height: auto;
   }
   .projectCard h3 {
@@ -1093,7 +1172,7 @@ footer p {
   /*contactpage*/
    /*contactpage*/
    #contact{
-    padding: 3rem 1rem 9rem 1rem;
+    padding: 4rem 1rem 9rem 1rem;
   }
   #contact h1 {
   font-size: 2rem;
@@ -1112,7 +1191,7 @@ footer p {
     width: 18rem;
   }
   .socialMediaSection p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   .sm2{
     width: 2.8rem;
@@ -1130,10 +1209,10 @@ footer p {
 
   /*footer*/
   footer{
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 ;
   }
   footer p{
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   footer img{
     width: 2.3rem;
@@ -1157,10 +1236,10 @@ footer p {
     font-size: 1.1rem;
   }
   .header-nav a{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .contactbtn button{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 
   }
 
@@ -1195,8 +1274,11 @@ footer p {
   }
 
   /*aboutpage*/
+  #about{
+    padding: 5rem 2rem;
+  }
   .aboutContainer{
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 1rem 2rem;
     align-items: center;
   }
   .aboutMeText{
@@ -1205,11 +1287,10 @@ footer p {
   }
   .aboutMe img{
     display: flex;
-    width: 22rem;
+    width: 30rem;
   }
-  .aboutMeText h1{
-    font-size: 2.7rem;
-    margin-bottom: 1rem;
+  #about h1{
+    font-size: 2rem;
   }
   .aboutMeText p{
     font-size: 1.7rem;
@@ -1263,7 +1344,10 @@ footer p {
   #skills h1{
     font-size: 2.7rem;
   }
-  
+  #skills p{
+    font-size: 1.3rem;
+    padding: 0 5rem;
+  }
   .containerSkills{
     width: 60%;
     padding: 5rem;

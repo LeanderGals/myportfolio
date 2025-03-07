@@ -1,12 +1,14 @@
-.aboutContainer{
+#about{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(116,116,227,1) 78%, rgba(104,104,228,1) 100%); 
-    color: white;
-    min-width: 100vw;
+    background-image: linear-gradient(to right bottom, #1c325b, #1c305f, #1d2e63, #212b66, #262869, #27266b, #28236d, #2a206f, #271e71, #241b74, #201976, #1c1678);    
     min-height: auto;
-}
+    color: white; 
+    justify-content: center;
+    align-items: center;
+  }
+
 
 .aboutMeText{
     display: flex;
@@ -34,7 +36,11 @@
   .aboutMeText h1:hover::after {
     width: 300px;
   }
-
+  
+  .aboutMe img{
+    display: flex;
+    width: 15rem;
+  }
   
 .aboutMeText p{
     font-size: 0.9rem;

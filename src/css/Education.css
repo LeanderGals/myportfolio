@@ -3,11 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/bg5.jpg"); /* Update with your actual image path */
-    background-size: cover;  /* Ensures the image covers the entire section */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;  /* Prevents tiling */
-    min-height: auto; 
+    background-image: linear-gradient(to left bottom, #1c325b, #1c305f, #1d2e63, #212b66, #262869, #27266b, #28236d, #2a206f, #271e71, #241b74, #201976, #1c1678);    
     min-width: 100vw;
     color: white;
     overflow: hidden;
