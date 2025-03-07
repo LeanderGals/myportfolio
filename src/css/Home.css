@@ -3,13 +3,13 @@
   }
   
 .homeContainer{
-    background-image: url("../images/bg1.jpg"); /* Update with your actual image path */
-    background-size: cover;  /* Ensures the image covers the entire section */
-    background-position: center;  /* Centers the image */
-    background-repeat: no-repeat;  /* Prevents tiling */
+    background-image: url("../images/bg1.jpg"); 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
     min-height: 100vh;
-    min-width: 100vw; /* Makes sure it takes the full viewport height */
-    display: flex;  /* Keeps your content centered if needed */
+    min-width: 100vw; 
+    display: flex; 
     align-items: center;
     justify-content: center;
     position: relative;
@@ -36,8 +36,6 @@
 .mypic img{
     width: 800px;
     height: auto;
-    /*mix-blend-mode: lighten;*/
-
 }
 .nametext{
     display: flex;
@@ -72,7 +70,7 @@
   
   .downloadbtn button:hover {
     transform: scale(1.1);
-    background-color: #7b7bff; /* Highlight effect */
+    background-color: #7b7bff; 
   }
 
   

@@ -7,7 +7,6 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../css/Projects.css';
 
-// Import images for each project
 import campusNav1 from '../images/ustp1.png';
 import campusNav2 from '../images/ustp2.png';
 import cloth1 from '../images/cloth1.png';
@@ -67,7 +66,6 @@ const Projects = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              {/* Swiper Carousel */}
               <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={10}

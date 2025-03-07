@@ -28,7 +28,6 @@ const Education = () => {
     <section id='education'>
       <div className="containerEduc">
         
-        {/* Header Animation */}
         <motion.div 
           className="educText"
           initial={{ opacity: 0, y: 50 }}
@@ -42,7 +41,6 @@ const Education = () => {
           It demonstrates my persistent pursuit of knowledge and skill enhancement to excel in my chosen field.          </p>
         </motion.div>
 
-        {/* Timeline Section (Each item animates separately) */}
         <div className="timeline">
           {educationData.map((item, index) => (
             <motion.div 
@@ -51,7 +49,7 @@ const Education = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
-              viewport={{ once: false, amount: 0.3 }} // Triggers animation when at least 30% of element is visible
+              viewport={{ once: false, amount: 0.3 }} 
             >
               <h3>{item.school}</h3>
               <p><strong>{item.degree}</strong></p>

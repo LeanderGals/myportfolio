@@ -7,17 +7,17 @@ const About = () => {
   return (
     <motion.section 
       id='about'
-      initial={{ opacity: 0, y: 50 }} // Start hidden and slightly below
-      whileInView={{ opacity: 1, y: 0 }} // Animate into view
-      transition={{ duration: 0.7, ease: "easeOut" }} // Smooth effect
-      viewport={{ once: true, amount: 0.2 }} // Trigger animation when 20% of the section is visible
+      initial={{ opacity: 0, y: 50 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.7, ease: "easeOut" }} 
+      viewport={{ once: true, amount: 0.2 }} 
     >
        <motion.h1 
           initial={{ opacity: 0, x: 50 }} 
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
         >About Me</motion.h1>
-        
+
       <div className="aboutContainer">
        
         <motion.div 

@@ -10,15 +10,14 @@
     height: auto; 
     position: fixed; 
     z-index: 1000;
-    background: transparent;  /* Make background transparent */
-    backdrop-filter: blur(10px); /* Optional: Adds a blur effect */
+    background: transparent;  
+    backdrop-filter: blur(10px); 
 
   }
   
  
   
  
-  /* Navigation link styles */
   .header-nav {
     display: flex;
     justify-content: flex-end;
@@ -46,7 +45,6 @@
     background-color: white;
     transition: width 0.3s ease-in-out;
   }
-   /* Site logo styles */
    .site-logo {
     display: flex;
     height: 50px; 
@@ -63,7 +61,7 @@
     width: 300px;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Reduce gap for a better fit */
+    gap: 10px; 
     height: 60px;
 }
 
@@ -71,7 +69,7 @@
   
     font-family: 'Orbitron', sans-serif;
     font-weight: 510;
-    font-size: .9rem; /* Adjust size */
+    font-size: .9rem;
     letter-spacing: 1.5px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -79,7 +77,6 @@
     transition: color 0.3s ease-in-out;
 }
 
-/* Add hover effect for a futuristic glow */
 .logoname p:hover {
     color: #7b7bff;
     text-shadow: 0 0 10px rgba(123, 123, 255, 0.8);
@@ -88,7 +85,7 @@
  
   .header-nav a {
     font-size: 0.9rem;
-    text-decoration: none;  /* Remove default underline */
+    text-decoration: none;  
     position: relative;
     padding-bottom: 5px;
     margin-left: 20px; 
@@ -96,7 +93,7 @@
     transition: color 0.3s ease;
   }
   .header-nav a:hover {
-    color: #6868E4; /* Change this to your preferred hover color */
+    color: #6868E4; 
   }
   
   .header-nav a:hover::after {
@@ -105,8 +102,8 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px; /* Thickness of the underline */
-    background-color: #6868E4; /* Change this to your preferred color */
+    height: 2px;
+    background-color: #6868E4;
   }
  .contactbtn button{
   background-color: #6868E4;
@@ -117,7 +114,6 @@
     transform: scale(1.05);
  }
   
-  /* Mobile menu button (hamburger) */
   .navbar-toggle {
     display: none; 
     background: none;
@@ -138,7 +134,6 @@
   }
  
   
-  /* Mobile navigation menu */
   .header-nav.open {
     display: flex;
     flex-direction: column;

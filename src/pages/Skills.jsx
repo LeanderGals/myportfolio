@@ -5,7 +5,6 @@ import '../css/Skills.css';
 const Skills = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
-  // Mapping skills to logos
   const skillLogos = {
     "HTML": "/images/html.png",
     "CSS": "/images/css.png",
@@ -46,7 +45,6 @@ const Skills = () => {
 
       <div className="containerSkills">
         
-        {/* Skills List Section */}
         <div className="skillsList">
           {skillCategories.map((category, index) => (
             <motion.div 
@@ -77,7 +75,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Skill Logo Display */}
         <motion.div 
           className="skillsImg"
           initial={{ opacity: 0, scale: 0.8 }}

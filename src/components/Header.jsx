@@ -13,7 +13,7 @@ const Header = () => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(id); // Set active manually when clicked
+      setActiveSection(id); 
     }
     setIsNavOpen(false);
   };
@@ -29,7 +29,7 @@ const Header = () => {
           }
         });
       },
-      { threshold: 0.6 } // Change active section when 60% of it is visible
+      { threshold: 0.6 } 
     );
 
     sections.forEach((section) => observer.observe(section));

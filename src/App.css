@@ -19,7 +19,7 @@ html, body {
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow-x: hidden; 
 
 }
 
@@ -844,7 +844,7 @@ footer p {
     position: absolute;
   }
   .timeline-item:nth-child(even)::before {
-    left: 128%; /* Move it to the right of the timeline */
+    left: 128%; 
     transform: translate(-50%, -50%);  
     position: absolute;
   }
@@ -1106,7 +1106,7 @@ footer p {
     position: absolute;
   }
   .timeline-item:nth-child(even)::before {
-    left: 132.5%; /* Move it to the right of the timeline */
+    left: 132.5%; 
     transform: translate(-50%, -50%);  
     position: absolute;
   }
@@ -1351,7 +1351,7 @@ footer p {
     left: -8.4rem;
   }
   .timeline-item:nth-child(even)::before {
-    left: 119%; /* Move it to the right of the timeline */
+    left: 119%; 
   }
 
 

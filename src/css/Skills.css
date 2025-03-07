@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    background: rgba(255, 255, 255, 0.1); 
     padding: 20px 50px;
     border-radius: 10px;
     width: 60%;
@@ -96,9 +96,9 @@
 #skills h1::after {
   content: "";
   display: block;
-  width: 6rem; /* Adjust the width of the underline */
-  height: 4px; /* Thickness of the underline */
-  background-color: white; /* Change to a preferred color */
+  width: 6rem; 
+  height: 4px; 
+  background-color: white; 
   position: absolute;
   left: 50%;
   bottom: -5px;

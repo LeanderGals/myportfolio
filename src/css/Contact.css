@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("../images/bg5.jpg"); /* Background image */
+    background-image: url("../images/bg5.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,9 +24,9 @@
   #contact h1::after {
     content: "";
     display: block;
-    width: 60%; /* Adjust the width of the underline */
-    height: 4px; /* Thickness of the underline */
-    background-color: white; /* Change to a preferred color */
+    width: 60%; 
+    height: 4px; 
+    background-color: white;
     position: absolute;
     left: 50%;
     bottom: -5px;
@@ -34,28 +34,28 @@
     transition: width 0.4s ease-in-out;
 
   }
+  #contact h1:hover::after{
+    width: 8rem;
+  }
   
-/* Semi-transparent background for better readability */
 .containerContact {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 60px;
-    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    background: rgba(255, 255, 255, 0.1); 
     padding: 80px;
     border-radius: 15px;
-    backdrop-filter: blur(10px); /* Blurry effect */
+    backdrop-filter: blur(10px); 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
 }
 
-/* Contact icon */
 .contactIcon img {
     width: 300px;
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
 }
 
-/* Contact form */
 .contactInfo {
     display: flex;
     flex-direction: column;
@@ -64,7 +64,6 @@
 
 }
 
-/* Form input fields */
 .contactInfo form {
     display: flex;
     flex-direction: column;
@@ -96,20 +95,17 @@
     resize: none;
 }
 
-/* Input placeholder color */
 .contactInfo input::placeholder, 
 .contactInfo textarea::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* Input focus effect */
 .contactInfo input:focus, 
 .contactInfo textarea:focus {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
 }
 
-/* Send button */
 .contactInfo button {
     width: 150px;
     padding: 12px;
@@ -127,7 +123,6 @@
     transform: scale(1.05);
 }
 
-/* Status message */
 .contactInfo p {
     font-size: 16px;
     color: #ffcc00;
@@ -153,7 +148,7 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s, transform 0.3s;
     z-index: 1001;
-    background: transparent;  /* Make background transparent */
+    background: transparent;  
     backdrop-filter: blur(100px); 
   }
   
