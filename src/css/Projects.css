@@ -21,7 +21,7 @@
 .containerProj h1::after {
     content: "";
     display: block;
-    width: 75px; /* Adjust width */
+    width: 5rem; /* Adjust width */
     height: 4px; /* Thickness of the underline */
     background-color: white; /* Your theme color */
     margin: auto;
@@ -33,7 +33,7 @@
 }
 
 .containerProj h1:hover::after {
-    width: 200px; /* Expand underline on hover */
+    width: 8rem; /* Expand underline on hover */
 }
 
 

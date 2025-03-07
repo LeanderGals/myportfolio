@@ -25,12 +25,14 @@
     content: "";
     display: block;
     width: 60%; /* Adjust the width of the underline */
-    height: 3px; /* Thickness of the underline */
+    height: 4px; /* Thickness of the underline */
     background-color: white; /* Change to a preferred color */
     position: absolute;
     left: 50%;
     bottom: -5px;
     transform: translateX(-50%);
+    transition: width 0.4s ease-in-out;
+
   }
   
 /* Semi-transparent background for better readability */

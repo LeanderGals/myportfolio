@@ -141,6 +141,8 @@ footer p {
     justify-content: center;
     align-items: center;
     display: flex;
+    padding: 2rem 0rem;
+
   }
   
   .aboutMeText{
@@ -172,6 +174,9 @@ footer p {
   }
   .educText p{
     font-size: 0.8rem;
+  }
+  .educText h1::after {
+    width: 5rem;
   }
   .timeline{
     width: 90%;
@@ -284,11 +289,14 @@ footer p {
 
   /*contactpage*/
   #contact{
-    padding: 4rem 1rem 5rem 1rem;
+    padding: 4rem 1rem 6rem 1rem;
   }
   #contact h1 {
   font-size: 1.3rem;
   padding-bottom: 0.5;
+  }
+  #skills h1::after {
+    width: 4rem;
   }
   .containerContact {
     flex-direction: column;
@@ -318,6 +326,7 @@ footer p {
   .scrollToTop {
     bottom: 3rem;
   }
+ 
   footer p{
     font-size: 0.8rem;
   }
@@ -550,6 +559,9 @@ footer p {
   .educText p{
     font-size: 1.1rem;
   }
+  .educText h1::after {
+    width: 15rem;
+  }
   .timeline{
     width: 80%;
   }
@@ -578,6 +590,9 @@ footer p {
     font-size: 1.1rem;
     padding: 0 5rem;
   }
+  #skills h1::after {
+    width: 6rem;
+  }
   .containerSkills{
     justify-content: center;
     width: 80%;
@@ -604,6 +619,9 @@ footer p {
   }
   .containerProj h1 {
     font-size: 2.2rem;
+  }
+  .containerProj h1::after {
+    width: 8rem;
   }
   .projectsGrid{
     flex-direction: column;
@@ -1290,7 +1308,7 @@ footer p {
     width: 30rem;
   }
   #about h1{
-    font-size: 2rem;
+    font-size: 2.7rem;
   }
   .aboutMeText p{
     font-size: 1.7rem;
@@ -1345,7 +1363,7 @@ footer p {
     font-size: 2.7rem;
   }
   #skills p{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     padding: 0 5rem;
   }
   .containerSkills{

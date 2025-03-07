@@ -96,16 +96,18 @@
 #skills h1::after {
   content: "";
   display: block;
-  width: 75px; /* Adjust the width of the underline */
-  height: 3px; /* Thickness of the underline */
+  width: 6rem; /* Adjust the width of the underline */
+  height: 4px; /* Thickness of the underline */
   background-color: white; /* Change to a preferred color */
   position: absolute;
   left: 50%;
   bottom: -5px;
   transform: translateX(-50%);
+  transition: width 0.4s ease-in-out;
+
 }
 #skills h1:hover::after{
-  width: 200px;
+  width: 8rem;
 }
  
   
