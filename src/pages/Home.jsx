@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react'; 
 import { motion } from 'framer-motion';
 import Mypic from '../images/image 1.png';
 import "../css/Home.css";
@@ -7,6 +7,28 @@ import Ig from '../images/ig.png';
 import X from '../images/x.png';
 
 const Home = () => {
+  const typewriterRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          typewriterRef.current.classList.remove("typewriter");
+          void typewriterRef.current.offsetWidth; 
+          typewriterRef.current.classList.add("typewriter");
+        }
+      },
+      { threshold: 0.5 } 
+    );
+
+    if (typewriterRef.current) {
+      observer.observe(typewriterRef.current);
+    }
+
+    return () => observer.disconnect(); 
+  }, []);
+
+
   return (
     <section id="home">
       <div className="homeContainer">
@@ -40,8 +62,9 @@ const Home = () => {
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: false, amount: 0.3 }}
               >
-                I'm Leander Galasanay
+                 <span ref={typewriterRef} className="typewriter">I'm Leander Galasanay</span>
               </motion.h1>
+
 
               <motion.p
                 initial={{ opacity: 0, y: -10 }}
