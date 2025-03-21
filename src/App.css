@@ -77,20 +77,52 @@ footer p {
     height: auto; 
   }
 
-  .header-nav {
-    display: none; 
-  }
-
-  .header-nav.open {
-    display: flex; 
-    gap: 1rem;
-    padding-bottom: 2rem;
-  }
-  .header-nav.open a {
+  .links-container {
+    position: fixed;
+    flex-direction: column;
     align-items: center;
+    right: -100%;
+    top: 0;
+    padding: 3rem 1rem;
+    z-index: 10;
+    width: 200px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to right bottom, #1c325b, #1c305f, #1d2e63, #212b66, #262869, #27266b, #28236d, #2a206f, #271e71, #241b74, #201976, #1c1678);
+    transition: 0.75s ease-in-out;
+    height: 100vh;
   }
-  .navbar-toggle {
-    display: block; 
+  nav a{
+    box-sizing: border-box;
+    height: auto;
+    padding: 1.3rem 2rem;
+    font-size: 0.8rem;
+    width: auto;
+    justify-content: center;
+  }
+   .open-sidebar-button{
+    display: block;
+    
+  }
+  .close-sidebar-button{
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 10px;
+  }
+  #contactbtn{
+    margin-top: 2rem;
+    font-size: 0.8rem ;
+   }
+  #sidebar-active:checked ~ .links-container{
+    right: 0;
+  }
+  #sidebar-active:checked ~ #overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
   }
 
 
@@ -344,17 +376,19 @@ footer p {
 
 @media (min-width: 425px){
    /*header*/
-   .headerContainer{
-    justify-content: space-between;
-    padding: 0 1rem 0 1.5rem;
+  .links-container {
+    width: 250px;
   }
-  .site-logo{
-    height: 2.3rem;
+  nav a{
+    font-size: 0.9rem;
   }
+  
+  #contactbtn{
+    margin-top: 2rem;
+    font-size: 0.9rem ;
+   }
  
-  .logoname p{
-    font-size: 0.7rem;
-  }
+
 
   /*homepage*/
   .homePicnText{
@@ -512,9 +546,47 @@ footer p {
   .logoname p{
     font-size: 1rem;
   }
-  .header-nav.open a {
-    font-size: 1.2rem;
+  .links-container {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    right: -100%;
+    top: 0;
+    padding: 5rem 1rem;
+    z-index: 10;
+    width: 400px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(to right bottom, #1c325b, #1c305f, #1d2e63, #212b66, #262869, #27266b, #28236d, #2a206f, #271e71, #241b74, #201976, #1c1678);
+    transition: 0.75s ease-in-out;
   }
+  nav a{
+    box-sizing: border-box;
+    height: auto;
+    padding: 1.3rem 2rem;
+    font-size: 1.3rem;
+    width: auto;
+    justify-content: center;
+  }
+   .open-sidebar-button{
+    display: block;
+    
+  }
+  .close-sidebar-button{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+
+  }
+  .close-sidebar-button img, .open-sidebar-button img{
+    width: 2.5rem;
+  }
+  #contactbtn{
+    margin-top: 2rem;
+    font-size: 1.3rem ;
+   }
+
+
 
   /*homepage*/
   .homePicnText{
@@ -746,7 +818,7 @@ footer p {
   /*header*/
   .headerContainer{
     justify-content: space-between;
-    padding: 0 1rem 0 1.5rem;
+    padding: 0 3rem 0 3rem;
   }
   .site-logo{
     height: 1.9rem;
@@ -761,29 +833,46 @@ footer p {
     flex-direction: column;
     height: auto; 
   }
-
-  .header-nav {
-    display: flex; 
-    gap: 5rem;
-  }
-  .header-nav a{
-    font-size: 0.8rem;
-  }
-
-  .header-nav.open {
-    display: none; 
-  }
-  .header-nav.open a {
+  .links-container {
+    display: flex;
+    position: static;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    right: auto;
+    top: auto;
+    padding: 0;
+    z-index: 10;
+    width: auto;
+    gap: 1rem;
+    box-shadow: none;
+    background-image: none;
+    transition: none;
+    height: auto
   }
-  .navbar-toggle {
-    display: none; 
-  }
-  .contactbtn button{
+  nav a{
+    display: flex;
+    box-sizing: border-box;
+    height: auto;
+    padding: 1rem;
+    align-items: center;
     font-size: 0.8rem;
-
+    width: auto;
+    justify-content: center;
   }
-
+   .open-sidebar-button{
+    display: none;
+    
+  }
+  .close-sidebar-button{
+    display: none;
+  }
+  #contactbtn{
+    margin-top: 0;
+    margin-left: 5rem;
+    font-size: 0.8rem ;
+   }
+  
 
   /*homepage*/
   .homePicnText{
@@ -1044,17 +1133,16 @@ footer p {
   .logoname p{
     font-size: 0.8rem;
   }
-  .header-nav {
-    display: flex; 
-    gap: 5rem;
+  .links-container { 
+    gap: 1.3rem;
   }
-  .header-nav a{
+  nav a{
     font-size: 0.9rem;
   }
-  .contactbtn button{
-    font-size: 0.9rem;
 
-  }
+  #contactbtn{
+    font-size: 0.9rem ;
+   }
 
 
   /*homepage*/
@@ -1320,13 +1408,14 @@ footer p {
   .logoname p{
     font-size: 1.1rem;
   }
-  .header-nav a{
+
+  nav a{
     font-size: 1.5rem;
   }
-  .contactbtn button{
-    font-size: 1.4rem;
 
-  }
+  #contactbtn{
+    font-size: 1.5rem ;
+   }
 
 
   /*homepage*/

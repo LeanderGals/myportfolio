@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Logo from '../images/logo.png'; 
+import menu from '../images/menu.png';
+import close from '../images/close.png';
 import '../css/Header.css';
 
 const Header = () => {
@@ -54,26 +56,30 @@ const Header = () => {
           </a>
         </div>
 
-        <div className="navigation1">
-          <button className="navbar-toggle" onClick={toggleNav}>
-            <span className="navbar-icon"></span>
-            <span className="navbar-icon"></span>
-            <span className="navbar-icon"></span>
-          </button>
 
-          <nav ref={navRef} className={`header-nav ${isNavOpen ? 'open' : ''}`}>
-            <div className="headernav1">
+      <nav>      
+        <input type="checkbox"  id="sidebar-active" />
+        <label htmlFor="sidebar-active" className='open-sidebar-button'>
+          <img src={menu}/>
+        </label>
+
+        <label id='overlay' htmlFor="sidebar-active"></label>
+        <div className="links-container">
+          <label htmlFor="sidebar-active" className='close-sidebar-button'>
+            <img src={close}/>
+          </label>
+        
+          
               <a href="#home" onClick={() => scrollToSection('home')} className={activeSection === 'home' ? 'active' : ''}>Home</a>
               <a href="#about" onClick={() => scrollToSection('about')} className={activeSection === 'about' ? 'active' : ''}>About</a>
               <a href="#education" onClick={() => scrollToSection('education')} className={activeSection === 'education' ? 'active' : ''}>Education</a>
               <a href="#skills" onClick={() => scrollToSection('skills')} className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
               <a href="#projects" onClick={() => scrollToSection('projects')} className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
-            </div>
-            <div className="contactbtn">
-              <button onClick={() => scrollToSection('contact')}>Contact Me</button>          
-            </div>
-          </nav>
-        </div>
+              <button id='contactbtn' onClick={() => scrollToSection('contact')}>Contact Me</button>          
+            
+          </div>
+
+      </nav>  
       </div>
     </header>
   );

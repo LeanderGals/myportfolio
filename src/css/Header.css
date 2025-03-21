@@ -5,56 +5,17 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0px auto;
-    width: 100%;
+    width: 100vw;
     height: auto; 
     position: fixed; 
     z-index: 1000;
-    background: transparent;  
     backdrop-filter: blur(10px); 
-
-  }
-  
- 
-  
- 
-  .header-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    gap: 10rem;
-    transition: transform 0.3s ease-in-out;
-  }
-  .headernav1 a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    transition: color 0.3s;
-  }
-
-  
-  .headernav1 a.active::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transition: width 0.3s ease-in-out;
   }
    .site-logo {
     display: flex;
     height: 50px; 
     width: auto;
     max-height: 50%; 
-  }
-
-  .navigation1{
-    display: flex;
-    flex-wrap: wrap;
   }
 .logoname {
     display: flex;
@@ -63,6 +24,7 @@
     justify-content: center;
     gap: 10px; 
     height: 60px;
+    z-index: 1;
 }
 
 .logoname p {
@@ -82,75 +44,72 @@
     text-shadow: 0 0 10px rgba(123, 123, 255, 0.8);
 }
 
- 
-  .header-nav a {
+  .links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  #sidebar-active{
+    display: none;
+  }
+
+  .close-sidebar-button img, .open-sidebar-button img{
+    width: 2rem;
+  }
+  .close-sidebar-button, .open-sidebar-button{
+    display: none;
+  }
+
+  nav a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
     font-size: 0.9rem;
     text-decoration: none;  
     position: relative;
     padding-bottom: 5px;
-    margin-left: 20px; 
-    color: white;
+    color: #ffffff;
     transition: color 0.3s ease;
   }
-  .header-nav a:hover {
+
+  
+  nav a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
     color: #6868E4; 
   }
   
-  .header-nav a:hover::after {
+  nav a:hover::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     height: 2px;
     background-color: #6868E4;
   }
- .contactbtn button{
+
+
+
+ #contactbtn{
+  color: #ffffff;
   background-color: #6868E4;
+
  }
 
- .contactbtn button:hover{
+ #contactbtn:hover{
     background: #7b7bff;
     transform: scale(1.05);
  }
-  
-  .navbar-toggle {
-    display: none; 
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-right: 5%;
-    position: relative; 
-    z-index: 1001; 
-  }
-  
-  .navbar-icon {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: #ffffff;
-    margin: 5px 0;
-    transition: 0.3s;
-  }
- 
-  
-  .header-nav.open {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    width: 100%;
-    border-top: 1px solid #eaeaea;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header-nav.open a {
-    color: #343a40;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0; 
-  }
-  
