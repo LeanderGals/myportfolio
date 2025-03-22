@@ -71,7 +71,7 @@ const Education = () => {
             <div className="text-box">
               <h2>Macanhan Elementary School (MES)</h2>
               <p><strong>Graduated from elementary</strong></p>
-              <p>S.Y. 2007 - 2013</p>     
+              <p>S.Y. 2008 - 2014</p>     
               <p>Macanhan, Carmen, Cagayan De Oro City, Misamis Oriental</p>
               <span className="right-arrow"></span>
               </div>
